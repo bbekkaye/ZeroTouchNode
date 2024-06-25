@@ -17,11 +17,13 @@ namespace ZeroTouchNode
         /// <summary>
         /// This is my first node that outputs a string that says Hello world. Awesome.
         /// </summary>
+        /// <param name="username"></param>
+        /// <param name="extraMessage"></param>
         /// <returns name="helloWorldString">Our hello world node.</returns>
-        public static string HelloWorld(string username)
+        public static string HelloWorld(string username = "dynamoUser", string extraMessage= "")
         {
             //returns one output of hello world
-            return "Hello " + username;
+            return $"Hello, {username}";
         }
     }
 }
